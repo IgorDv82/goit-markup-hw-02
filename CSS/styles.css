@@ -1,3 +1,56 @@
+:root {
+  --primary-color-text: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
+/* colors
+our team bcr - #F5F4FA
+footer bcr - #2F303A
+portf frame color - #EEEEEE
+button bcr - F5F4FA*/
+/* header-decoration */
+
 body {
-    background-color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--white-color);
+  color: var(--primary-color-text);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.header-block .logo-top {
+  color: var(--black-color);
+}
+
+/* main-decoration */
+
+/* footer-decoration */
+.logo-bottom {
+  color: var(--white-color);
+}
+.footer-block {
+  background-color: var(--black-color);
+}
+.footer-block .link {
+  color: rgba(255, 255, 255, 0.6);
 }
