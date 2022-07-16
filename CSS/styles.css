@@ -1,56 +1,91 @@
 :root {
   --primary-color-text: #757575;
-  --title-text-color: #212121;
+  --primary-title-color: #212121;
   --accent-color: #2196f3;
-  --white-color: #ffffff;
-  --black-color: #000000;
-}
 
+  --web-logo-color: #2196f3;
+  --header-logo-studio: #000000;
+  --footer-logo-studio: #ffffff;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+
+  --our-team-background: #f5f4fa;
+
+  /* --footer-background: #2f303a; */
+  /* --portfolio-link-background: #eeeeee; */
+}
 /* colors
-our team bcr - #F5F4FA
-footer bcr - #2F303A
-portf frame color - #EEEEEE
 button bcr - F5F4FA*/
-/* header-decoration */
+/* --------------------BASIC--------------------- */
 
 body {
-  font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
-  background-color: var(--white-color);
   color: var(--primary-color-text);
 }
 
 .list {
   list-style: none;
 }
-
 .link {
   text-decoration: none;
 }
 
+.title {
+  color: var(--primary-title-color);
+}
+
+/* --------------------header--------------------- */
+
+/* --------------------LOGO--------------------- */
 .logo {
-  font-family: 'Raleway';
-  font-style: normal;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
 }
-.header-block .logo-top {
-  color: var(--black-color);
+.header-nav .logo-top {
+  color: var(--header-logo-studio);
+}
+/* --------------------------------------------- */
+.header-list .current {
+  color: var(--accent-color);
 }
 
+.header-link,
+.header-mail,
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-title-color);
+}
+.header-mail,
+.header-tel {
+  color: var(--primary-color-text);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-tel:hover,
+.header-tel:focus,
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--accent-color);
+}
 /* main-decoration */
 
 /* footer-decoration */
 .logo-bottom {
-  color: var(--white-color);
+  color: var(--footer-logo-studio);
 }
-.footer-block {
-  background-color: var(--black-color);
-}
+
 .footer-block .link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-link-color);
+  font-style: normal;
+}
+.footer-block .city {
+  color: var(--footer-logo-color);
 }
